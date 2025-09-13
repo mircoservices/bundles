@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import 'swiper/css';
 
 console.log("Swiper loaded", Swiper);
 
