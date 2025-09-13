@@ -1,0 +1,19 @@
+{
+    "name": "bundles",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "build": "run-p build:*",
+        "build:recommendations": "esbuild recommendations.js --bundle --minify --outfile=recommendations.min.js",
+        "build:hero": "esbuild hero.js --bundle --minify --outfile=hero.min.js"
+    },
+    "dependencies": {
+        "swiper": "12.0.1",
+        "three": "0.134.0",
+        "vanta": "0.5.24"
+    },
+    "devDependencies": {
+        "esbuild": "0.25.9",
+        "npm-run-all": "4.1.5"
+    }
+}
